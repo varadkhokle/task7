@@ -51,6 +51,7 @@ export class UseraddComponent implements OnInit {
       this.userService.addUser(this.profileForm.value);
       this.isSubmitted = false;
     }
+  this.userService.generateUser();
   }
   
 }

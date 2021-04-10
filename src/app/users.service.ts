@@ -27,7 +27,21 @@ export class UsersService {
    return this.http.get(this.totalCaseUrl);
  }
   private Details:any[] = [];
- 
+  public Records:{};
+ generateUser()
+  {this.Details.forEach(Records=>{
+    this.store.collection('users').add({
+      name:Records.inputName,
+      email:Records.inputEmail,
+      phone:Records.inputPhone,
+      address:Records.inputAddress,
+
+    });
+  }
+  );
+
+  }
+  
     addUser(details: FormGroup) {
         this.Details.push(details);
     }
