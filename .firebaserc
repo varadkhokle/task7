@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "task7-388de": {
+      "hosting": {
+        "task7": [
+          "task7-388de"
+        ]
+      }
+    }
+  }
+}
