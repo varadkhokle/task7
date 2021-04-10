@@ -41,7 +41,10 @@ export class UsersService {
   );
 
   }
-  
+  fetchData()
+  {return this.store.collection('users').snapshotChanges();
+
+  }
     addUser(details: FormGroup) {
         this.Details.push(details);
     }
