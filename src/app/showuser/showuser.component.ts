@@ -26,5 +26,10 @@ export class ShowuserComponent implements OnInit
     })
   });
   }
+
+  deleteRec(tempId)
+  {this.userService.deleteR(tempId);
+
+  }
   
 }

@@ -45,6 +45,10 @@ export class UsersService {
   {return this.store.collection('users').snapshotChanges();
 
   }
+  deleteR(tempR){
+    this.store.doc('users'+tempR).delete();
+
+  }
     addUser(details: FormGroup) {
         this.Details.push(details);
     }
