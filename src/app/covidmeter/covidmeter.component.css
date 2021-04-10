@@ -1,0 +1,46 @@
+.container
+{
+  margin-top: 20px;
+}
+.options
+{
+  margin-left: 10px;
+}
+ul{
+  list-style: none;
+}
+ul .new
+{
+  display: inline-flex;
+  margin-left: 10px;
+}
+ul .new li
+{padding-bottom: 10px;
+  vertical-align: centre;
+  margin-right: 30px;
+}
+.dot1 {
+  height: 23px;
+  width: 23px;
+  background-color:rgba(89, 89, 238, 0.979);
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot2 {
+  height: 23px;
+  width: 23px;
+  background-color: rgb(55, 238, 55);
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot3 {
+  height: 23px;
+  width: 23px;
+  background-color: rgb(245, 39, 39);
+  border-radius: 50%;
+  display: inline-block;
+}
+.table-dark
+{
+  color: black;
+}
