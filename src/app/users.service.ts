@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import {HttpClient} from '@angular/common/http';
 import { Observable } from "rxjs";
+import { AngularFirestore} from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: "root"
@@ -12,7 +13,7 @@ export class UsersService {
  private casesUrl='';
  public selectCountry= "";
 
- constructor( private http:HttpClient)
+ constructor( private http:HttpClient,private store:AngularFirestore)
  {
  }
 
